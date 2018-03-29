@@ -1,6 +1,6 @@
 {
   "name": "json-mock-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight tool to spin up a simple mock server using JSON syntax - perfect for mocked development, offline development or unit testing.",
   "bin": {
     "json-mock-server": "./cli.js"
