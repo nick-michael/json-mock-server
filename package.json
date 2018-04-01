@@ -1,6 +1,6 @@
 {
   "name": "json-mock-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A lightweight tool to spin up a simple mock server using JSON syntax - perfect for mocked development, offline development or unit testing.",
   "bin": {
     "json-mock-server": "./cli.js"
@@ -15,6 +15,7 @@
   "author": "nick-michael",
   "license": "MIT",
   "dependencies": {
+    "chalk": "2.3.2",
     "commander": "2.15.1",
     "koa": "2.5.0",
     "koa-router": "7.4.0"
