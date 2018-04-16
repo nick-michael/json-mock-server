@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const cors = require('@koa/cors');
 const Router = require('koa-router');
 const chalk = require('chalk');
 
@@ -35,6 +36,7 @@ const start = (routes, port = 3001) => {
     console.log(chalk.red('Routes are not a valid json object - exiting.'));
     return;
   }
+  app.use(cors({ origin: "*", allowHeaders: "Origin, X-Requested-With, Content-Type, Accept" }));
   initialRoutes = { ...routes };
   currentRoutes = { ...routes };
   loadRoutes(initialRoutes);
