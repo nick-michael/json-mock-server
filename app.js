@@ -36,7 +36,7 @@ const start = (routes, port = 3001) => {
     console.log(chalk.red('Routes are not a valid json object - exiting.'));
     return;
   }
-  app.use(cors({ origin: "*", allowHeaders: "Origin, X-Requested-With, Content-Type, Accept" }));
+  app.use(cors({ origin: "*", allowHeaders: "*" }));
   initialRoutes = { ...routes };
   currentRoutes = { ...routes };
   loadRoutes(initialRoutes);
